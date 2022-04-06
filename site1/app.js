@@ -7,7 +7,7 @@ LController.$inject= ['$scope'];
 
     function LController($scope) {
         $scope.text= "";
-        $scope.message= "Please enter data, I'll not count blank spaces"
+        $scope.message= "Please enter data"
 
         $scope.checkAmount= function () {
             var itemArray= $scope.text.split(","); 
@@ -27,8 +27,6 @@ LController.$inject= ['$scope'];
                $scope.message= "Too much!";
                $scope.textColor= "green";
            }
-            
-           console.log(count);
         }
     }
 })();
